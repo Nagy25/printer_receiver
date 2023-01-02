@@ -7,8 +7,11 @@
 #include "generated_plugin_registrant.h"
 
 #include <charset_converter/charset_converter_plugin.h>
+#include <system_tray/system_tray_plugin.h>
 
 void RegisterPlugins(flutter::PluginRegistry* registry) {
   CharsetConverterPluginRegisterWithRegistrar(
       registry->GetRegistrarForPlugin("CharsetConverterPlugin"));
+  SystemTrayPluginRegisterWithRegistrar(
+      registry->GetRegistrarForPlugin("SystemTrayPlugin"));
 }

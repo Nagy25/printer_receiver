@@ -4,6 +4,7 @@ import 'package:printer_receiver/services/server/server.dart';
 
 abstract class ServerInterface {
   static final provider = Provider<ServerInterface>(
-      (ref) => Server(ref.read(PrinterInterface.provider)));
+    (ref) => Server(ref.read(PrinterInterface.provider)),
+  );
   Future<void> createReceiver();
 }
