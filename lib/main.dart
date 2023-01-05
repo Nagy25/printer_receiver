@@ -1,5 +1,5 @@
 import 'package:bitsdojo_window/bitsdojo_window.dart';
-import 'package:flutter/material.dart';
+import 'package:fluent_ui/fluent_ui.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
 import 'package:printer_receiver/ui/app.dart';
 
@@ -9,7 +9,7 @@ void main() {
   runApp(const ProviderScope(child: MyApp()));
 
   doWhenWindowReady(() {
-    const initialSize = Size(600, 450);
+    const initialSize = Size(800, 500);
     appWindow.minSize = initialSize;
     appWindow.size = initialSize;
     appWindow.alignment = Alignment.center;
@@ -23,10 +23,11 @@ class MyApp extends StatelessWidget {
   // This widget is the root of your application.
   @override
   Widget build(BuildContext context) {
-    return const MaterialApp(
+    return FluentApp(
       title: 'Printer receiver',
       debugShowCheckedModeBanner: false,
-      home: App(),
+      theme: ThemeData.dark(),
+      home: const App(),
     );
   }
 }
