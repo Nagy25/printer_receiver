@@ -16,7 +16,7 @@ class TitleBar extends StatelessWidget {
               Theme.of(context).scaffoldBackgroundColor,
               Theme.of(context).scaffoldBackgroundColor
             ],
-            stops: [0.0, 1.0],
+            stops: const [0.0, 1.0],
           ),
         ),
         child: Row(
