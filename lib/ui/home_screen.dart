@@ -1,5 +1,7 @@
+import 'package:easy_localization/easy_localization.dart';
 import 'package:fluent_ui/fluent_ui.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
+import 'package:printer_receiver/generated/locale_keys.g.dart';
 import 'package:printer_receiver/providers/home_screen_notifier.dart';
 import 'package:printer_receiver/ui/pages/home_page.dart';
 import 'package:printer_receiver/ui/pages/notifications_page.dart';
@@ -24,12 +26,12 @@ class HomeScreen extends ConsumerWidget {
         items: [
           PaneItem(
             icon: const Icon(FluentIcons.home),
-            title: const Text('Home'),
+            title: Text(LocaleKeys.home.tr()),
             body: const HomePage(),
           ),
           PaneItem(
-            icon: const Icon(FluentIcons.home),
-            title: const Text('Home'),
+            icon: const Icon(FluentIcons.alert_settings),
+            title: Text(LocaleKeys.notifications.tr()),
             body: const NotificationsPage(),
           ),
         ],
@@ -37,7 +39,7 @@ class HomeScreen extends ConsumerWidget {
           PaneItemSeparator(),
           PaneItem(
             icon: const Icon(FluentIcons.settings),
-            title: const Text('settings'),
+            title: Text(LocaleKeys.settings.tr()),
             body: const SettingsPage(),
           )
         ],

@@ -1,12 +1,23 @@
 import 'package:bitsdojo_window/bitsdojo_window.dart';
+import 'package:easy_localization/easy_localization.dart';
 import 'package:fluent_ui/fluent_ui.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
 import 'package:printer_receiver/ui/app.dart';
 
-void main() {
+Future<void> main() async {
   WidgetsFlutterBinding.ensureInitialized();
+  await EasyLocalization.ensureInitialized();
 
-  runApp(const ProviderScope(child: MyApp()));
+  runApp(
+    EasyLocalization(
+      supportedLocales: const [
+        Locale('en'),
+        Locale('ar'),
+      ],
+      path: 'assets/translations',
+      child: const ProviderScope(child: MyApp()),
+    ),
+  );
 
   doWhenWindowReady(() {
     const initialSize = Size(800, 500);
@@ -26,6 +37,9 @@ class MyApp extends StatelessWidget {
     return FluentApp(
       title: 'Printer receiver',
       debugShowCheckedModeBanner: false,
+      localizationsDelegates: context.localizationDelegates,
+      supportedLocales: context.supportedLocales,
+      locale: context.locale,
       theme: ThemeData.dark(),
       home: const App(),
     );

@@ -1,0 +1,21 @@
+{
+  "home": "الرئيسية",
+  "notifications": "الااشعارات",
+  "settings": "الاعدادات",
+  "printer": "الطابعة",
+  "usb": "مخرج يو اس بي",
+  "network": "الشبكة",
+  "ip": "الاي بي",
+  "connect": "اتصل",
+  "disconnect": "فصل",
+  "connected": "متصل",
+  "disconnected": "غير متصل",
+  "connecting": "جاري الاتصال",
+  "try_again": "حاول مره اخري",
+  "close": "اغلاق",
+  "exit": "خروج",
+  "something_wrong": "حدث خطأ ما",
+  "scanning": "جاري البحث",
+  "scan": "بحث"
+
+}

@@ -1,0 +1,21 @@
+{
+  "home": "Home",
+  "notifications": "Notifications",
+  "settings": "Settings",
+  "printer": "Printer",
+  "usb": "USB",
+  "network": "Network",
+  "ip": "IP",
+  "connect": "Connect",
+  "disconnect": "Disconnect",
+  "connected": "connected",
+  "disconnected": "disconnected",
+  "connecting": "connecting",
+  "try_again": "Try again",
+  "close": "Close",
+  "exit": "Exit",
+  "something_wrong": "something wrong",
+  "scanning": "scanning",
+  "scan": "Scan"
+
+}

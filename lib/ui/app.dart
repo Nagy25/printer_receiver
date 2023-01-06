@@ -4,7 +4,7 @@ import 'package:flutter_riverpod/flutter_riverpod.dart';
 import 'package:printer_receiver/services/server/server_interface.dart';
 import 'package:printer_receiver/services/system_tray/app_system_tray.dart';
 import 'package:printer_receiver/ui/home_screen.dart';
-import 'package:printer_receiver/ui/title_bar.dart';
+import 'package:printer_receiver/ui/system_bar/title_bar.dart';
 
 class App extends ConsumerStatefulWidget {
   const App({super.key});

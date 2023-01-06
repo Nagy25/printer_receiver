@@ -16,7 +16,6 @@ class Server implements ServerInterface {
     server.post('/printer', (httpRequest) async {
       final MiniResponse response =
           await MiniResponse.instance.init(httpRequest);
-      print("hero   " + response.body.toString());
       // printer.print(response.body.toString());
     });
   }
