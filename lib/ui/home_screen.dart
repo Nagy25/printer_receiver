@@ -5,6 +5,7 @@ import 'package:printer_receiver/generated/locale_keys.g.dart';
 import 'package:printer_receiver/providers/home_screen_notifier.dart';
 import 'package:printer_receiver/ui/pages/home_page.dart';
 import 'package:printer_receiver/ui/pages/notifications_page.dart';
+import 'package:printer_receiver/ui/pages/printer_page.dart';
 import 'package:printer_receiver/ui/pages/settings_page.dart';
 
 class HomeScreen extends ConsumerWidget {
@@ -33,6 +34,11 @@ class HomeScreen extends ConsumerWidget {
             icon: const Icon(FluentIcons.alert_settings),
             title: Text(LocaleKeys.notifications.tr()),
             body: const NotificationsPage(),
+          ),
+          PaneItem(
+            icon: const Icon(FluentIcons.print),
+            title: Text(LocaleKeys.printer.tr()),
+            body: const PrinterPage(),
           ),
         ],
         footerItems: [
