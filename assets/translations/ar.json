@@ -6,6 +6,7 @@
   "usb": "مخرج يو اس بي",
   "network": "الشبكة",
   "ip": "الاي بي",
+  "enter_printer_ip": "ادخل الاي بي الخاص بالطابعة",
   "connect": "اتصل",
   "disconnect": "فصل",
   "connected": "متصل",

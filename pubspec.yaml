@@ -41,6 +41,7 @@ dependencies:
   bitsdojo_window: ^0.1.5
   easy_localization: ^3.0.1
   json_annotation: ^4.7.0
+  copy_with_extension: ^5.0.0
 
 dev_dependencies:
   flutter_test:
@@ -49,6 +50,7 @@ dev_dependencies:
   lint: ^2.0.1
   json_serializable: ^6.5.4
   build_runner: ^2.3.3
+  copy_with_extension_gen: ^5.0.0
 
 # For information on the generic Dart part of this file, see the
 # following page: https://dart.dev/tools/pub/pubspec

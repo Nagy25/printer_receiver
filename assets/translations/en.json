@@ -6,6 +6,7 @@
   "usb": "USB",
   "network": "Network",
   "ip": "IP",
+  "enter_printer_ip": "Enter printer IP",
   "connect": "Connect",
   "disconnect": "Disconnect",
   "connected": "connected",

@@ -8,6 +8,7 @@ abstract class  LocaleKeys {
   static const usb = 'usb';
   static const network = 'network';
   static const ip = 'ip';
+  static const enter_printer_ip = 'enter_printer_ip';
   static const connect = 'connect';
   static const disconnect = 'disconnect';
   static const connected = 'connected';
